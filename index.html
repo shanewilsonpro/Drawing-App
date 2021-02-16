@@ -9,7 +9,45 @@
     </head>
 
     <body>
-        
+        <!-- TITLE-->
+        <div id="header">Drawing App</div>
+
+        <!-- COLOR INPUT -->
+        <div class="inputContainer">
+            <div class="input" id="colorInput">
+                <input type="color" list id="paintColor">
+            </div>
+
+            <!-- SIZE-->
+            <div class="input" id="thicknessInput">
+                <div id="circle"></div>
+            </div>
+            <div class="input">
+                <div id="slider"></div>
+            </div>
+        </div>
+
+        <!-- CANVAS -->
+        <div id="container">
+            <canvas id="paint" width="800px" height="700px"></canvas>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="buttonContainer">
+            <!-- erase button-->
+            <div class="inputButton">
+                <span id="erase" class="button">Erase</span>
+            </div>
+            <!-- save button-->
+            <div class="inputButton">
+                <span id="save" class="button">Save</span>
+            </div>
+            <!-- reset button -->
+            <div class="inputButton">
+                <span id="reset" class="button">Reset</span>
+            </div>
+        </div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script src="js/main.js"></script>
